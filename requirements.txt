@@ -1,0 +1,8 @@
+gradio
+cohere
+langchain
+langchain-core
+langchain-community
+langchain-cohere
+faiss-cpu
+wikipedia

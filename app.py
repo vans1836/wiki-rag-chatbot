@@ -6,7 +6,7 @@ from langchain.chains import RetrievalQA
 import os
 
 # Setting up my Cohere API Key
-os.environ["COHERE_API_KEY"] = "ZzVFCGrAWfsUKkcuj2JnIM9H4X00s8u83i08FXKq"  # 
+os.environ["COHERE_API_KEY"] = "ZzVFCGrAWfsUKkcuj2JnIM9H4X00s8u83i08FXKq"  
 
 # Loading and preparing RAG pipeline once
 def build_rag_chain(question):
@@ -18,7 +18,7 @@ def build_rag_chain(question):
     response = qa.invoke({"query": question})
     return response
 
-# Create the Gradio interface
+# Creating the  interface
 iface = gr.Interface(
     fn=build_rag_chain,
     inputs=gr.Textbox(lines=2, placeholder="Ask me anything about the world..."),

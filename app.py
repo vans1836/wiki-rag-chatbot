@@ -5,10 +5,10 @@ from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 import os
 
-# Set your Cohere API Key
-os.environ["COHERE_API_KEY"] = "ZzVFCGrAWfsUKkcuj2JnIM9H4X00s8u83i08FXKq"  # 🔁 Replace with yours
+# Setting up my Cohere API Key
+os.environ["COHERE_API_KEY"] = "ZzVFCGrAWfsUKkcuj2JnIM9H4X00s8u83i08FXKq"  # 
 
-# Load and prepare RAG pipeline once
+# Loading and preparing RAG pipeline once
 def build_rag_chain(question):
     loader = WikipediaLoader(query=question, load_max_docs=3)
     docs = loader.load()

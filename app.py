@@ -6,7 +6,7 @@ from langchain.chains import RetrievalQA
 import os
 
 # Setting up my Cohere API Key
-os.environ["COHERE_API_KEY"] = "ZzVFCGrAWfsUKkcuj2JnIM9H4X00s8u83i08FXKq"  
+os.environ["COHERE_API_KEY"] = "your api key here"  
 
 # Loading and preparing RAG pipeline once
 def build_rag_chain(question):
